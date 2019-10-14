@@ -1,5 +1,9 @@
 # TechCognize
 
+<div align="center">
+<img src="techcognize.jpg"/>
+</div>
+
 This HCI (Human-Computer Interaction) application in Python will allow you to control your mouse cursor with your facial movements, works with just your regular webcam. Its hands-free, no wearable hardware or sensors needed.
 
 The list of actions include:
