@@ -16,13 +16,9 @@ The list of actions include:
 * PyAutoGUI
 * Dlib
 * Imutils
-* Audio files - https://drive.google.com/open?id=12eH3CTVb4tjSmfg8QE7ByzAve_qJA6gH
 
 ## Execution
 Order of Execution is as follows:
-
-1. Make sure you have the model downloaded. Read the README.txt file inside the model folder for the link. 
-2. `python mouse-cursor-control.py`
 
 ## Usage
  
