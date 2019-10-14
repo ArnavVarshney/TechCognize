@@ -1,5 +1,3 @@
-#git test
-
 import time
 import speech_recognition as sr;
 import time
