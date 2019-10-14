@@ -17,9 +17,6 @@ The list of actions include:
 * Dlib
 * Imutils
 
-## Execution
-Order of Execution is as follows:
-
 ## Usage
  
 <div align="center">
