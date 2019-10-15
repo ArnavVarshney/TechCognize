@@ -67,6 +67,11 @@ echo
 pip3 install pyaudio
 echo
 
+echo "Installing playsound"
+echo
+pip3 install playsound
+echo
+
 echo "All dependencies have been setup successfully!"
 echo
 
