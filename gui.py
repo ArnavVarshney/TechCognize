@@ -150,7 +150,7 @@ class Toplevel1:
                 Thread(target=callback_kill).start()
 
         def callback_kill():
-                os.kill(pid, signal.SIGKILL)
+                os.kill(pid, signal.SIGTERM)
 
         self.EXIT = tk.Button(self.Frame1)
         self.EXIT.place(relx=0.64, rely=0.3, height=168, width=86)
