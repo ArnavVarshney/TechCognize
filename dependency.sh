@@ -60,6 +60,7 @@ echo "Installing tkinter"
 echo
 pip3 install tk-tools
 pip3 install tkintertable
-echo
 
 echo "All dependencies have been setup successfully!"
+echo
+
