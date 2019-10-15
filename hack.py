@@ -1,6 +1,5 @@
 import time
-import speech_recognition as sr;
-import time
+import speech_recognition as sr
 
 yy = ''
 
@@ -108,11 +107,6 @@ while True:
     # Loop over the face detections
     if len(rects) > 0:
         rect = rects[0]
-    else:
-        cv2.imshow("Frame", frame)
-        key = cv2.waitKey(1) & 0xFF
-        flag = 0
-        continue
 
     # Determine the facial landmarks for the face region, then convert the facial landmark (x, y)-coordinates to a NumPy array
     shape = predictor(gray, rect)
