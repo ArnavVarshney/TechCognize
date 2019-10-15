@@ -107,6 +107,12 @@ while True:
     # Loop over the face detections
     if len(rects) > 0:
         rect = rects[0]
+    else:
+        cv2.imshow("Frame", frame)
+        key = cv2.waitKey(1) & 0xFF
+        flag = 0
+        continue
+	
 
     # Determine the facial landmarks for the face region, then convert the facial landmark (x, y)-coordinates to a NumPy array
     shape = predictor(gray, rect)
@@ -175,10 +181,10 @@ while True:
                 EYE_COUNTER += 1
                 if EYE_COUNTER > EYE_AR_CONSECUTIVE_FRAMES:
                     SCROLL_MODE = not SCROLL_MODE
-                    #if (SCROLL_MODE):
-                        #playsound("son.mp3")
-                    #else:
-                        #playsound("soff.mp3")
+                    if (SCROLL_MODE):
+                        playsound("son.mp3")
+                    else:
+                        playsound("soff.mp3")
                     EYE_COUNTER = 0
             else:
                 EYE_COUNTER = 0
@@ -190,10 +196,10 @@ while True:
         if MOUTH_COUNTER >= MOUTH_AR_CONSECUTIVE_FRAMES:
             # if the alarm is not on, turn it on
             INPUT_MODE = not INPUT_MODE
-            #if (INPUT_MODE):
-                #playsound("welcome.mp3")
-            #else:
-                #playsound("off.mp3")
+            if (INPUT_MODE):
+                playsound("welcome.mp3")
+            else:
+                playsound("off.mp3")
             MOUTH_COUNTER = 0
             ANCHOR_POINT = nose_point
 
@@ -227,7 +233,7 @@ while True:
         cv2.putText(frame, 'SCROLL MODE IS ON!', (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, RED_COLOR, 2)
 
     # Show the frame
-    cv2.imshow("Video Capture", frame)
+    cv2.imshow("TechCognize - Video Capture", frame)
     key = cv2.waitKey(1) & 0xFF
 
     # If the `Esc` key was pressed, break from the loop
